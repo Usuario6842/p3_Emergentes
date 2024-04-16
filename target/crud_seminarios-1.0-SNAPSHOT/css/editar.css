@@ -1,0 +1,73 @@
+        *{
+            color-scheme: light dark;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            margin: 2rem 0;
+            text-align: center;
+            h1{
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 3em;
+                background: linear-gradient(to bottom, #b8fd99, #FF204E);
+                font-family: monospace,sans-serif;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+        }
+        form{
+            margin: auto;
+            width: 80vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5fr 1fr;
+            gap:1rem;
+
+            .section1{
+                order: 1;
+                padding: 1rem;
+                
+                input{
+                    padding: .2rem .5rem;
+                    border-radius: 1rem;
+                    outline: none;
+                    border: 1px solid #eee;
+                }
+                input:focus{
+                    border: 1px solid #2f2;
+                }
+                input[type="radio"] {
+                    transform: scale(1.1);
+                    margin: 0 .2rem ;
+                }
+            }
+            .section2{
+                order: 2;
+                padding: 1rem;
+            }
+            .section3{
+                order: 3;
+                grid-column: span 2;
+                text-align: center;
+                button{
+                    border: 2px solid #F2613F;
+                    border-radius: 2rem;
+                    text-decoration: none;
+                    padding: .5rem 2rem;
+                    background-color: transparent;
+                    color: #F2613F;
+                    text-transform: uppercase;
+                    font-weight: bold; 
+                    cursor: pointer;
+                    transition: all .5s ease;
+                }
+                button:hover{
+                background-color: #F2613F;
+                color: #000;               
+            }
+            }
+
+        }
